@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editTextTime"
+        android:text="Salir" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextTime"
+        android:layout_alignParentBottom="true"
+        android:text="Guardar" />
+
+    <EditText
+        android:id="@+id/editTextBaseServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonExit"
+        android:layout_alignLeft="@+id/buttonSave"
+        android:layout_marginBottom="25dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextBaseServ"
+        android:layout_alignLeft="@+id/editTextRutaImage"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="time" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPassServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextRutaImage"
+        android:layout_alignLeft="@+id/editTextUserServ"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="textVisiblePassword" />
+
+    <EditText
+        android:id="@+id/editTextUserServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPassServ"
+        android:layout_alignLeft="@+id/editTextServ"
+        android:layout_marginBottom="25dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUserServ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextRutaImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextTime"
+        android:layout_alignLeft="@+id/editTextPassServ"
+        android:layout_marginBottom="30dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textViewServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextServ"
+        android:layout_alignLeft="@+id/editTextServ"
+        android:text="Servidor FTP" />
+
+    <TextView
+        android:id="@+id/textViewImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextRutaImage"
+        android:layout_alignLeft="@+id/textViewPass"
+        android:text="Nombre Imagen" />
+
+    <TextView
+        android:id="@+id/textViewHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextTime"
+        android:layout_alignLeft="@+id/textViewImagen"
+        android:text="Hora Actualizacion" />
+
+    <TextView
+        android:id="@+id/textViewBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextBaseServ"
+        android:layout_alignLeft="@+id/textViewHora"
+        android:text="Base Servidor" />
+
+    <TextView
+        android:id="@+id/textViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUserServ"
+        android:layout_alignRight="@+id/textViewServ"
+        android:text="Usuario FTP" />
+
+    <TextView
+        android:id="@+id/textViewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPassServ"
+        android:layout_alignLeft="@+id/editTextPassServ"
+        android:text="Pass FTP" />
+
+</RelativeLayout>
